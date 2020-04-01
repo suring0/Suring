@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/User/articleitems/articleitems",
+    "pages/User/user/user",
+    "pages/User/collect/collect",
+    "pages/Admin/PublicArticle/PublicArticle",
+    "pages/Admin/AdminIndex/AdminIndex",
+    "pages/Admin/Setting/Setting",
+    "pages/Admin/UsersInfo/UsersInfo"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#87CEFA",
+    "navigationBarTitleText": "猫咪私语",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#333",
+    "selectedColor": "#d24a58",
+    "backgroundColor": "#f6f6f7",
+    "borderStyle": "white", 
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/index1.png",
+        "selectedIconPath": "images/index2.png"
+      },
+      {
+        "pagePath": "pages/User/user/user",
+        "text": "我的",
+        "iconPath": "images/my1.png",
+        "selectedIconPath": "images/my2.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "cloud": true
+}

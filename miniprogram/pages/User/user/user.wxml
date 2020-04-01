@@ -1,0 +1,38 @@
+<!--pages/user/user.wxml-->
+<view class="container">
+
+  <!-- 用户 openid -->
+  <view class="userinfo">
+  <!--     <open-data class="userinfo-avatar" type="userAvatarUrl"></open-data>
+     <open-data class="userinfo-nickname" type="userNickName"></open-data> -->
+      <image class="userinfo-avatar" src="{{avatarUrl}}" />  
+    <view>
+      <form report-submit='true' bindsubmit='onGetUserInfo'>
+        <button form-type='submit' class="userinfo-nickname" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo" >{{login}}</button>
+     </form>
+    </view>
+  </view>
+
+<view class="display">
+
+  <view class="uploader" bindtap="collect">
+    <view class="uploader-img">
+      <image src="../../../images/like.png"></image>
+    </view>
+    <view class="uploader-text" >
+      <text>收藏列表</text>
+    </view>
+  </view>
+
+  <view class="uploader" bindtap="admin" wx:if="{{limit == true}}">
+    <view class="uploader-img">
+      <image src="../../../images/admin.png"></image>
+    </view>
+    <view class="uploader-text" >
+      <text>管理员入口</text>
+    </view>
+  </view>
+  
+</view>
+
+</view>

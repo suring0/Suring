@@ -1,0 +1,23 @@
+<view class="edit_wrap">
+<form bindsubmit="submitForm">   
+
+  <view class="form_group">
+      <text>首页显示风格：</text>
+      <picker mode="selector" value="{{index2}}" range="{{array2}}" bindchange='varietiesChange2'>
+        <view >
+          <text>{{Varieties2}}</text>
+        </view>
+      </picker>
+  </view>
+  
+  <view class="form_group">
+      <text>首页显示内容：</text>
+      <picker mode="selector" value="{{index3}}" range="{{array3}}" bindchange='varietiesChange3'>
+        <view >
+          <text>{{Varieties3}}</text>
+        </view>
+      </picker>
+  </view>
+ </form>
+</view> 
+

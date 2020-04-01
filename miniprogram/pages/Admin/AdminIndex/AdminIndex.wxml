@@ -1,0 +1,36 @@
+<view class="page">
+ <view class="text">
+  <text>欢迎进入管理界面</text> 
+ </view>
+ <view  class="display">
+
+<view class="uploader" bindtap="WriteArticle"> 
+    <view class="uploader-img">
+      <image src="../../../images/publish.png"></image>
+    </view>
+    <view class="uploader-text" >
+      <text>推送公开文章</text>
+    </view>
+  </view>
+
+  <view class="uploader" bindtap="UsersInfo">
+    <view class="uploader-img">
+      <image src="../../../images/patient.png"></image>
+    </view>
+    <view class="uploader-text" >
+      <text>微信用户管理</text>
+    </view>
+  </view>
+
+
+  <view class="uploader" bindtap="Setting">
+    <view class="uploader-img">
+      <image src="../../../images/setting.png"></image>
+    </view>
+    <view class="uploader-text" >
+      <text>系统设置</text>
+    </view>
+  </view>
+
+ </view>
+</view>

@@ -1,0 +1,133 @@
+swiper{
+  width:100%; 
+  height: 350rpx; 
+}
+.swiper-image{
+   width:100%; 
+}
+.formbutton{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 5rpx solid #484248;
+}
+.choose1{
+  padding-right: 5rpx;
+}
+.choose1 button{
+  width: 370rpx;
+  height: 100rpx;
+  font-size:35rpx;
+  color:white;
+  background: #484248;
+  border-bottom: 1rpx solid white;
+  border-top: 1rpx solid white;
+}
+.choose2{
+  padding-left: 5rpx;
+}
+.choose2 button{
+    width: 370rpx;
+    height: 100rpx;
+    font-size:35rpx;
+    color:white;
+    background: #484248;
+    border-top: 1rpx solid white;
+    border-bottom: 1rpx solid white;
+}
+.top{
+  padding-top:10rpx;
+  padding-bottom:10rpx;
+  text-align: center;
+  font-weight:800;
+  font-size: 40rpx;
+  border-bottom: 5rpx solid #ddd;
+}
+.getimg{
+  margin-top: 2%;
+  border-bottom: 5rpx solid #ddd;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 430rpx;
+}
+.img{
+  width: 96%;
+  margin: 0 2% 0 2%;
+  align-items: center;
+  text-align: center;
+}
+.img image{
+  height: 350rpx;
+  width: 100%;
+}
+.txt{
+  align-items: center;
+  text-align: center;
+}
+.txt text{
+  font-size: 30rpx;
+  font-weight: 500;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+.nav_section{
+    width:100%;
+}
+.content{
+   width: 96%;
+   padding: 0 2% 0 2%;
+}
+.content text{
+  font-size: 36rpx;
+  color: rgb(63, 62, 62);
+  font-weight: 600;
+}
+.nav_section_items{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:20rpx;
+    border-bottom:2rpx solid #ddd;
+    position: relative;
+}
+.nav_section_items:active{
+    background:#ddd;
+}
+.nav_section_items .section_image{
+    width:170rpx;
+    height:158rpx;
+}
+.nav_section_items .section_image image{
+    width:100%;
+    height:100%;
+}
+.nav_section_items .section_cont{
+    width:500rpx;
+    font-size:26rpx;
+    color:#a9a9a9;
+}
+.nav_section_items .section_cont view{
+    overflow:hidden;
+    text-overflow: ellipsis;
+    white-space:nowrap;
+    display: block;
+}
+.nav_section_items .section_cont .section_cont_intro{
+    white-space:normal;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.nav_section_items .section_cont .section_cont_title{
+    font-size: 30rpx;
+    font-weight: 500;
+    line-height:60rpx;
+    color:#000;
+    margin-bottom:10rpx;
+}
+.nav_section_items .section_cont .section_cont_rname{
+    font-size:30rpx;
+    margin-bottom: 12rpx;
+}

@@ -1,0 +1,28 @@
+<view class='container'>
+  <view class='title'><text>{{title}}</text></view> 
+  <view class='content-title'>
+    <view class="avatarUrl"><image src="{{avatarUrl}}"></image></view>
+    <view class="title-time"><text decode="true">{{name}}&emsp;{{time}}</text></view>
+  </view> 
+
+ <video class="video" hidden="{{hiddenVideo}}" id="myVideo" src="{{src}}"></video>
+ <view class='article'>
+     <block wx:for='{{images}}' wx:key="index">
+      <view>
+         <image class='content-img' src='{{images[index]}}'  mode='widthFix' bindtap="previewImg"></image>
+      </view>
+    </block>
+    <view class='content-text'>
+      <text>{{content}}</text>
+    </view>
+ </view>
+</view>
+
+  <view class='like-container' bindtap='onLikeClick' wx:if='{{isLike}}'>
+    <image class='like-icon' src='../../../images/like.png'></image>
+    <text class='like-text'>已喜欢</text>
+  </view>
+  <view class='like-container' bindtap='onLikeClick' wx:else>
+    <image class='like-icon' src='../../../images/unlike.png'></image>
+    <text class='like-text'>喜欢</text>
+  </view>

@@ -1,0 +1,28 @@
+ <view  class='top'>
+   <text class='text'>微信用户信息</text>
+ </view>
+
+ <view class="nav_section">
+    <view wx:if="{{list}}">
+        <block wx:for="{{list}}" wx:key="index">
+            <view class="nav_section_items" data-id='{{item._id}}' bindtap="check">
+                <view class="section_image">
+                    <image src="{{item.avatarUrl}}" mode="aspectFill"></image>
+                </view>
+                <view class="section_cont" >
+                    <view class="section_cont_title">
+                       <text decode="{{true}}">昵&emsp;称：{{item.nickName}}</text>
+                    </view>
+                    <view class="section_cont_rname">
+                       <text>管理员：{{item._isAdmin}}</text>
+                    </view>
+                    <view class="section_cont_address">
+                       <text decode="{{true}}">地&emsp;址：{{item.country}}.{{item.province}}.{{item.city}}</text>
+                    </view>
+                    <view class="section_cont_time">建档时间：{{item._createDate}}</view>
+                </view>
+            </view>         
+        </block>
+    </view>
+ </view>
+

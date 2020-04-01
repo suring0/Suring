@@ -1,0 +1,30 @@
+<view class="content">
+
+  <view class="form_group">
+    <input class='input' placeholder='请输入通知标题' bindinput='inputTitle' value='{{title}}' />
+  </view>
+
+  <form bindsubmit="formSubmit">
+    <view class="text-content">
+      <view class='text-area'>
+        <textarea maxlength="{{max}}" name="input-content" type="text" placeholder="请输入通知内容" placeholder-class="holder" value="{{textContent}}" bindblur='getTextAreaContent'></textarea>
+      </view>
+    </view>
+
+    <scroll-view class="image-group" scroll-x="true">
+      <block wx:for='{{images}}' wx:key='idx'>
+      <view>
+        <image src='{{images[idx]}}' mode='aspectFill' bindtap="previewImg"></image>
+        <icon type='clear' bindtap='removeImg'  data-index="{{idx}}" ></icon>
+      </view>
+      </block>
+    </scroll-view>
+
+    <view class='btn-func'>
+      <button class="btn-img" bindtap='chooseImage'>选择图片</button>
+      <button class="btn-video" bindtap='chooseVideo'>上传视频</button>
+      <button class="btn" formType='submit'  open-type="publisharticle">发送通知</button>
+    </view>
+  </form>
+
+</view>

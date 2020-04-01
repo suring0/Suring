@@ -1,0 +1,50 @@
+
+<view wx:if="{{showlimit == 1}}"> 
+   
+ <view  class='top'>
+   <text class='text'>{{title}}</text>
+ </view>
+
+ <view class="nav_section">
+    <view wx:if="{{list}}">
+        <block wx:for="{{list}}" wx:key="index">
+            <view class="nav_section_items" data-id='{{item._id}}' bindtap="check">
+                <view class="section_image" wx:if="{{item.images.length==0}}">
+                    <image src="cloud://lixin.6c69-lixin-1301642151/Img/losepic1.png" mode="aspectFill"></image>
+                </view>
+                <view class="section_image" wx:if="{{item.images.length!=0}}">
+                    <image src="{{item.images[0]}}" mode="aspectFill"></image>
+                </view>
+                <view class="section_cont" >
+                    <view class="section_cont_title">
+                        <text>{{item.title}}</text>
+                    </view>
+                    <view class="section_cont_rname" style="color:#000">时间：<text class="section_cont_rname"> {{item.time}}</text></view>
+                    <view>发布人：{{item.name}}</view>
+                </view>
+            </view>         
+        </block>
+    </view>
+ </view>
+</view>
+
+<view wx:if="{{showlimit == 0}}"> 
+
+  <view  class='top'>
+     <text class='text'>{{title}}</text>   
+  </view>
+  <view class='getimg' wx:for="{{list}}" wx:key="index" data-id='{{item._id}}' bindtap="check">
+    <view class="img" >
+      <view  wx:if="{{item.images.length==0}}">
+         <image src="cloud://lixin.6c69-lixin-1301642151/Img/losepic2.png" mode="aspectFill"></image>
+      </view>
+      <view wx:if="{{item.images.length!=0}}">
+          <image src="{{item.images[0]}}" mode="aspectFill"></image>
+      </view>
+    </view>
+      <view class="txt">
+          <text>{{item.title}}</text>
+      </view>
+  </view>
+
+</view>

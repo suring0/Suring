@@ -1,0 +1,115 @@
+/* pages/user/user.wxss */
+
+page {
+  background: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.userinfo {
+  display: flex;
+  flex-direction: row;
+  height: 130px;
+  width: 100%;
+  background-color: #87CEFA;
+  align-items: center;
+}
+.userinfo-avatar {
+  width: 70%;
+  color: #fff;
+  margin-left: 10px;
+  align-items: center;
+}
+.userinfo-avatar {
+  width: 100rpx;
+  height: 100rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+  background-size: cover;
+  background-color: white;
+}
+.userinfo-avatar:after {
+  border: none;
+}
+.userinfo-nickname {
+  font-size: 32rpx;
+  color:black;
+  background-color: white;
+  background-size: cover;
+}
+.userinfo-nickname::after {
+  border: none;
+}
+
+/*
+.uploader{
+  margin-top: 20rpx;
+  height: 140rpx;
+  width: 100%;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transition: all 300ms ease;
+}
+.uploader, .tunnel {
+  height: auto;
+  padding: 0 0 0 40rpx;
+  flex-direction: column;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+.uploader-text, .tunnel-text {
+  width: 100%;
+  line-height: 52px;
+  font-size: 34rpx;
+  color: black;
+}
+
+.uploader-container {
+  width: 100%;
+  height: 400rpx;
+  padding: 20rpx 20rpx 20rpx 0;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.uploader-img {
+  display: inline-block;
+  width: 20px;
+  margin-right: 5px;
+
+}*/
+
+.display{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20rpx;
+  width: 100%;
+}
+.uploader{
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  border: 5rpx solid rgba(0, 0, 0, 0.1);
+  width: 100%;
+  margin-top: 20rpx;
+}
+.uploader-img{
+  padding-top:15rpx;
+  padding-left: 0rpx;
+  padding-right: 30rpx;
+}
+.uploader-img image{
+  height: 70rpx;
+  width: 70rpx;
+}
+.uploader-text {
+} 
+.uploader-text text{
+  font-size: 34rpx;
+  color: black;
+} 

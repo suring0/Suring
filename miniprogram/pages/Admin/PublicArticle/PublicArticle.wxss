@@ -1,0 +1,118 @@
+.content {
+  height: 100%;
+  width: 100%;
+}
+.background {
+  height:100%;
+  width:100%;
+  position:fixed;
+  z-index: -1;
+}
+.form_group{
+    display: flex;
+    justify-content:space-between;
+    line-height: 40rpx;
+}
+.form_group .input{
+   background: white;
+    padding: 10px;
+    border-radius: 10rpx;
+    margin-top: 10rpx;
+    margin-right: 1%;
+    margin-left: 1%;
+    border:1px solid rgb(197, 197, 197);
+    height:35rpx;
+    width:100%;
+}
+textarea {
+  width: 700rpx;
+  padding: 25rpx 0;
+}
+
+.text-content {
+  background: white;
+  margin-top: 10rpx;
+  margin-right: 1%;
+  margin-left: 1%;
+  border:1px solid rgb(197, 197, 197);
+  padding: 0 25rpx;
+  height:450rpx;
+}
+
+.image-group {
+  display: flex;
+  white-space: nowrap;
+  margin-top: 5rpx;
+}
+
+.image-group view{
+  display: inline-block;
+  flex-direction: row;
+  width: 300rpx;
+  height: 300rpx;
+  margin-right: 20rpx;
+  margin-left: 20rpx;
+  background-color: #cfcccc;
+}
+
+.image-group view image{
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+.image-group view icon{
+  display: inline-block;
+  vertical-align: top;
+  position: absolute
+}
+button{
+  border: 4rpx solid rgba(0, 0, 0, 0.15);
+}
+.btn-func {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  bottom: 10rpx;
+  margin: 0 auto;
+}
+
+.btn-img {
+  width: 80%;
+  height: 45px;
+  margin-top: 30px;
+  background-color: white;
+  border-radius: 50px;
+}
+.btn-video {
+  width: 80%;
+  height: 45px;
+  line-height: 45px;
+  margin-top: 10px;
+  background-color: white;
+  border-radius: 50px;
+}
+.btn {
+  width: 80%;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 50px;
+  margin-top: 10px;
+  background-color: white;
+}
+.form_group{
+    display: flex;
+    justify-content:space-between;
+    line-height: 40rpx;
+}
+.form_group .input{
+    padding: 10px;
+    border-radius: 10rpx;
+    margin-top: 10rpx;
+    margin-right: 1%;
+    margin-left: 1%;
+    border:1px solid rgb(197, 197, 197);
+    height:35rpx;
+    width:100%;
+}
